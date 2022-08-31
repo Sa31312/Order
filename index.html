@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root{
+    --primary:hsl(225, 100%, 94%);
+    --rightblue: hsl(245, 75%, 52%);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+    --Family: 'Barlow', sans-serif;
+    --family:'Poppins', sans-serif;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    max-width: 1440px;
+    min-width: 375px;
+    background-image: url("../order-summary-component-main/images/pattern-background-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: var(--Family);
+    font-family: var(--family);
+
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+.class{
+    background-color: var(--Darkblue);
+}
+.box{
+    margin-top: 10px;
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+}
+.box img{
+    border-radius: 20px 20px 0px 0px;
+}
+.box p{
+    font-weight: 500;
+
+}
+.box h1{
+    font-weight: 900;
+
+}
+.inner img{
+    margin-top: 5%;
+    margin-left: -25%;
+    padding: 10px;
+}
+.inner{
+    background-color: var(--Verypaleblue);
+    padding: auto;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 20px;
+    
+}
+.inner p{
+    font-size: 20px;
+    font-weight: 900;
+    margin-left: 0%;
+    margin-top: -10%;
+    display: inline-block;
+    
+}
+.inner span{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary);
+}
+.inner a{
+   float: right;
+   margin-top: 50px;
+   margin-right: 15px;
+   color: var(--rightblue);
+}
+#as{
+    padding: 10px 20%;
+    background-color: var(--rightblue);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 1px 5px 13px 5px var(--Desaturatedblue);
+}
+#cencel{
+    text-decoration: none;
+    color: var(--Desaturatedblue);
+    font-weight: 500;
+}
+  </style>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;0,700;1,600&family=Poppins:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  Order Summary
+
+  You can now listen to millions of songs, audiobooks, and podcasts on any 
+  device anywhere you like!
+
+  Annual Plan
+  $59.99/year
+
+  Change
+
+  Proceed to Payment
+  Cancel Order
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Salman</a>.
+  </div>
+  <br><div class="class">
+  <div class="box">
+    <img src="../order-summary-component-main/images/illustration-hero.svg" alt="Hero">
+    <p>
+      <h1>Order Summary</h1>
+      You can now listen to millions of songs, <br> audiobooks, and podcasts on any device <br> anywhere you like!
+    </p>
+    <div class="inner">
+      <img src="../order-summary-component-main/images/icon-music.svg" alt="music">
+      <p>
+        
+        Annual Plan 
+        <br><span>$59.99/year</span> 
+      </p>
+      <a href="#">Change</a>
+    </div>
+    <br>
+    <a href="#" id="as">Proceed to Payment</a><br><br><br>
+    <a href="#" id="cencel">Cancel Order</a><br><br><br>
+    
+  </div>
+  
+  </div>
+</body>
+</html>
